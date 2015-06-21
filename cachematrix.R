@@ -2,11 +2,13 @@
 ## a matrix. This is beneficial in that the inverse will not need to be
 ## recomputed for each iteration of a loop.
 
+
 ## In this function we create 4 methods that allow the user to get
 ## and set a cached matrix, as well get and set the value for the inverse
 ## of the matrix.
 ## makeCacheMatrix returns a list of these 4 functions so that a user 
 ## can appropriately update the cached inverse.
+
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -25,6 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolve first checks if the inverse has been calculated and cached.
+
 ## If it was available it returns it immediately. If not, it calculates the
 ## inverse, caches it for future requests, and then returns the inverse.
 
